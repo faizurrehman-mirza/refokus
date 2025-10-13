@@ -17,7 +17,7 @@ const Navbar = () => {
               <a className="text-sm flex items-center gap-1  ">
                 {index === 1 && (
                   <span
-                    style={{ boxShadow: "0 0 .25em #00FF19; " }}
+                    style={{ boxShadow: "0 0 .25em #00FF19 " }}
                     className="inline-block w-1.5 h-1.5 rounded-full bg-[#00FF19] "
                   ></span>
                 )}{" "}
