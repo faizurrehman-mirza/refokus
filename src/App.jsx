@@ -1,11 +1,13 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Work from "./components/Work";
+import Stripes from "./components/Stripes";
 
 const App = () => {
-  return <div className='h-screen w-full bg-zinc-900 text-white font-satoshi '>
+  return <div className=' w-full bg-zinc-900 text-white font-satoshi '>
     <Navbar />
     <Work/>
+    <Stripes/>
   </div>;
 };
 
