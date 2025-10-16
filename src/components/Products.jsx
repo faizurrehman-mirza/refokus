@@ -40,7 +40,7 @@ function Products() {
     },
   ];
   return (
-    <div className="">
+    <div className="mt-14">
       
         {products.map((val, index) => <Product products={val}/> ) }
     </div>
