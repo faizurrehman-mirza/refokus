@@ -13,6 +13,7 @@ function Stripes() {
   return (
     <div className='flex mt-10'>
         {data.map((elem,index) =>(<Stripe val={elem}/>) )}
+        
        
     </div>
   )
