@@ -1,16 +1,60 @@
-# React + Vite
+# 🎉 **Refokus** — _Interactive React showcase_
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="./assets/refokus-logo.svg" alt="Refokus logo" width="220" />
+</p>
 
-Currently, two official plugins are available:
+>> **Welcome** to your **Refokus** clone — *amazing work!* 🎨🛠️
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This README is a friendly guide to run the site, add videos, and publish the repo. It keeps commands minimal and helpful.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Highlights
 
-## Expanding the ESLint configuration
+- **React + Vite**
+- **Tailwind CSS**
+- **Motion** animations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Quick start
+
+- Install:
+
+```bash
+npm install
+```
+
+- Start dev server:
+
+```bash
+npm run dev
+```
+
+- Build (optional):
+
+```bash
+npm run build
+```
+
+---
+
+## 🎬 Add videos
+
+Drop optimized MP4/WebM files into `public/videos/` and set the `video` field in `src/components/Products.jsx` if needed.
+
+---
+
+## 📦 Push to GitHub (one-line)
+
+Run this once you have a GitHub repo URL:
+
+```bash
+git add README.md assets/refokus-logo.svg && git commit -m "Update README" && git push
+```
+
+---
+
+Made with ❤️ by **faizurrehman-mirza**.# 🎉 **Refokus** — _Interactive React showcase_
+
