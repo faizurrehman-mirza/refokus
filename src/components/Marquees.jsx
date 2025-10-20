@@ -27,9 +27,14 @@ function Marquees() {
     ],
   ];
   return (
-    <div className="py-40">
-        {image.map((item, index) => <Marquee imagesurl={item} key={index} />)}
-      
+    <div className="py-40 relative w-full">
+      {image.map((item, index) => (
+        <Marquee
+          imagesurl={item}
+          key={index}
+          direction={index === 0 ? "left" : "right"}
+        />
+      ))}
     </div>
   );
 }
