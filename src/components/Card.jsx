@@ -1,9 +1,16 @@
+import { motion } from "motion/react";
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-function Card({ width, start, para, hover }) {
+function Card({ width, start, para, count, backgroundcolor }) {
   return (
-    <div className={`bg-zinc-800 ${width} hover:p-7 hover:${hover} rounded-xl p-5 font-medium min-h-[30rem] flex flex-col justify-between`}>
+    <motion.div
+      whileHover={{
+        backgroundColor: count === 0 ? "#52525B" : "#7443FF",
+        padding: "40px",
+      }}
+      className={`${backgroundcolor} ${width}  rounded-xl p-5 font-medium min-h-[30rem] flex flex-col justify-between`}
+    >
       <div className="w-full">
         <div className="flex justify-between items-center">
           <h2>up next news</h2>
@@ -14,27 +21,25 @@ function Card({ width, start, para, hover }) {
           Insights and behind the scenes Explore what
         </h1>
       </div>
-     
+
       <div className="bottom mt-32  ">
-         {start ===true &&(
-        <>
-         <h1 className="text-9xl tracking-tighter font-semibold leading-none">
-          Start a project
-        </h1>
-        <button className="py-2 font-thin px-3 border border-zinc-200 mt-4 rounded-full ">
-          Contact Us
-        </button>
-        </>
-      )}
-      {para === true && (
-<p className="text-sm text-zinc-500 font-medium  ">
-          Explore what drives our team.
-        </p>
-      )}
-       
-        
+        {start === true && (
+          <>
+            <h1 className="text-9xl tracking-tighter font-semibold leading-none">
+              Start a project
+            </h1>
+            <button className="py-2 font-thin px-3 border border-zinc-200 mt-4 rounded-full ">
+              Contact Us
+            </button>
+          </>
+        )}
+        {para === true && (
+          <p className="text-sm text-zinc-500 font-medium  ">
+            Explore what drives our team.
+          </p>
+        )}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
