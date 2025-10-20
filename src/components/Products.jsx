@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Product from "./Product";
+import { motion } from "motion/react";
 
 function Products() {
   const products = [
@@ -39,10 +40,84 @@ function Products() {
       case: true,
     },
   ];
+  const [position, setPosition] = useState(0);
+  const mover = (val) => {
+    setPosition(val * 23);
+  };
   return (
-    <div className="mt-14">
-      
-        {products.map((val, index) => <Product products={val} key={index}/> ) }
+    <div className="mt-14 relative">
+      {products.map((val, index) => (
+        <Product products={val} count={index} key={index} mover={mover} />
+      ))}
+      <div className="absolute top-0 pointer-events-none  h-full w-full ">
+        <motion.div
+          initial={{ y: 0, x: "-50%" }}
+          animate={{ y: position + `rem` }}
+          transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
+          className="window absolute h-[23rem] w-1/3 left-[45%]  overflow-hidden   "
+        >
+          <motion.div
+            animate={{ y: -position + `rem` }}
+            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
+            className=" h-full w-full flex items-center justify-center rounded-xl "
+          >
+            <video className="h-[16rem] w-[20rem] rounded-xl object-cover  "
+              autoPlay
+              muted
+              loop
+              src="videos\Arqitel project video 4_3.webm"
+            ></video>
+          </motion.div>
+          <motion.div
+            animate={{ y: -position + `rem` }}
+            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
+            className=" h-full w-full flex items-center justify-center rounded-xl "
+          >
+            <video className="h-[16rem] w-[20rem] rounded-xl object-cover  "
+              autoPlay
+              muted
+              loop
+              src="videos\Cula_promo_new_4_3.mp4"
+            ></video>
+          </motion.div>
+          <motion.div
+            animate={{ y: -position + `rem` }}
+            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
+            className=" h-full w-full flex items-center justify-center "
+          >
+            <video className="h-[16rem] w-[20rem] rounded-xl object-cover  "
+              autoPlay
+              muted
+              loop
+              src="videos\webflow-education-promo.mp4"
+            ></video>
+          </motion.div>
+          <motion.div
+            animate={{ y: -position + `rem` }}
+            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
+            className=" h-full w-full flex items-center justify-center rounded-xl "
+          >
+            <video className="h-[16rem] w-[20rem] rounded-xl object-cover  "
+              autoPlay
+              muted
+              loop
+              src="videos\TTR project video 4_3_H.264.webm"
+            ></video>
+          </motion.div>
+         <motion.div
+            animate={{ y: -position + `rem` }}
+            transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
+            className=" h-full w-full flex items-center justify-center rounded-xl "
+          >
+            <video className="h-[16rem] w-[20rem] rounded-xl object-cover  "
+              autoPlay
+              muted
+              loop
+              src="videos\Maniv-Compressed.mp4"
+            ></video>
+          </motion.div>
+        </motion.div>
+      </div>
     </div>
   );
 }
