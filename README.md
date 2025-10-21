@@ -1,7 +1,7 @@
 # 🎉 Refokus — Interactive React showcase
 
 <p align="center">
-  <img src="./assets/refokus-logo.svg" alt="Refokus logo" width="220" />
+  <img src="https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63349803431f1562dccf1802_refokus%20logo.svg" alt="Refokus logo" width="220" />
 </p>
 
 Welcome to your Refokus clone — great job! This README keeps things short, friendly and practical.
@@ -39,7 +39,7 @@ Made with ❤️ by **faizurrehman-mirza**.
 # 🎉 **Refokus** — _Interactive React showcase_
 
 <p align="center">
-  <img src="./assets/refokus-logo.svg" alt="Refokus logo" width="220" />
+  <img src="https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63349803431f1562dccf1802_refokus%20logo.svg" alt="Refokus logo" width="220" />
 </p>
 
 >> **Welcome** to your **Refokus** clone — *amazing work!* 🎨🛠️
